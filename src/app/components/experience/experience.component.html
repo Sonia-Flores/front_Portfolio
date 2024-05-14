@@ -1,0 +1,14 @@
+<div class="container my-4 w-50">
+    <h2>Experiencia</h2>
+    @for (experience of arrExperiences; track $index) {
+                       <div class="card h-100 mb-5">
+                           <div class="card-body">
+                            <h4>{{experience.position}}</h4>
+                            <h5>{{experience.company}}</h5>
+                             <p class="card-text">{{experience.description}}</p>
+                             <p>{{experience.time}}</p>
+                       </div>
+               </div>
+          
+       }
+</div>

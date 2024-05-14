@@ -1,0 +1,14 @@
+<div class="container my-4 w-50">
+     @for (project of arrProjects; track $index) {
+                        <div class="card h-100 mb-5">
+                            <img [src]="project.image" class="card-img-top w-100 bg-dark" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{project.name}}</h5>
+                              <p class="card-text">{{project.description}}</p>
+                              <a href="{{project.link}}" target="_blank"> Saber más</a>
+                        </div>
+                </div>
+           
+        }
+        </div>
+ 
